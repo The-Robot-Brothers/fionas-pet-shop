@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <title>Homepage</title>
       </Head>
 
-      <img src={RocketseatLogo} alt="Logo" />
+      <RocketseatLogo />
       <h1>Fiona's Pet Shop</h1>
     </Container>
   )
