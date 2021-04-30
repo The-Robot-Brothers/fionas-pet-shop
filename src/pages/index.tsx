@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 const Home: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <h1>Hello World</h1>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
