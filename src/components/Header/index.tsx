@@ -1,11 +1,20 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Container, Wrapper, Link } from './styles'
+import RocketseatLogo from '../../assets/rocketseat.svg'
 
 const Header: React.FC = () => {
   return (
     <Container>
-      <h1>Header</h1>
+      <Wrapper>
+        <RocketseatLogo />
+        <Link>
+          <a href="#">Sobre Nós</a>
+          <a href="#">Contato</a>
+          <a href="#">Test</a>
+          <button>Login</button>
+        </Link>
+      </Wrapper>
     </Container>
   )
 }

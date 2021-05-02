@@ -1,17 +1,16 @@
 import Head from 'next/head'
 
 import { Container } from '../styles/pages/Home'
-import RocketseatLogo from '../assets/rocketseat.svg'
+import Header from '../components/Header'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Homepage</title>
+        <title>Fiona's Pet Shop</title>
       </Head>
 
-      <RocketseatLogo />
-      <h1>Fiona's Pet Shop</h1>
+      <Header />
     </Container>
   )
 }
