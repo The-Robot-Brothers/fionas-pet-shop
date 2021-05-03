@@ -3,8 +3,9 @@ const theme = {
     background: '#121214',
     text: '#e1e1e6',
     primary: '#8257e6',
-    red: '#E8265B',
-    green: '#00C06B'
+    logout: '#E8265B',
+    login: '#00C06B',
+    login_dark_hover: '#001a0e'
   }
 }
 

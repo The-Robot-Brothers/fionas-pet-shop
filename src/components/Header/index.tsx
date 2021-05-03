@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Wrapper, Link } from './styles'
+import { Container, Wrapper, Link, LogInIcon } from './styles'
 import RocketseatLogo from '../../assets/rocketseat.svg'
 
 const Header: React.FC = () => {
@@ -12,7 +12,10 @@ const Header: React.FC = () => {
           <a href="#">Sobre Nós</a>
           <a href="#">Contato</a>
           <a href="#">Test</a>
-          <button>Login</button>
+          <button>
+            Login
+            <LogInIcon />
+          </button>
         </Link>
       </Wrapper>
     </Container>

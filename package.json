@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@styled-icons/feather": "^10.18.0",
     "next": "10.1.3",
     "next-images": "^1.7.0",
     "react": "17.0.2",
