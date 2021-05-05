@@ -5,7 +5,8 @@ const theme = {
     primary: '#8257e6',
     logout: '#E8265B',
     login: '#00C06B',
-    login_dark_hover: '#001a0e'
+    login_dark_hover: '#001a0e',
+    outline: '#7A7A7A'
   }
 }
 

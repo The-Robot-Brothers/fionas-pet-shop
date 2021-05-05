@@ -1,1 +1,1 @@
-export { LogIn, LogOut } from '@styled-icons/feather'
+export { LogIn, LogOut, MessageCircle, Image } from '@styled-icons/feather'

@@ -1,17 +1,16 @@
 import Head from 'next/head'
 
-import { Container } from '../styles/pages/Home'
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 const Home: React.FC = () => {
   return (
-    <Container>
+    <div>
       <Head>
         <title>Fiona's Pet Shop</title>
       </Head>
 
-      <Header />
-    </Container>
+      <Layout />
+    </div>
   )
 }
 
