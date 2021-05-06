@@ -56,6 +56,13 @@ export const MenuButton = styled.div`
   height: unset;
 
   cursor: pointer;
+
+  :hover {
+    svg {
+      color: ${props => props.theme.colors.primary_light_hover};
+      stroke: ${props => props.theme.colors.primary_light_hover};
+    }
+  }
 `
 
 const iconCSS = css`
