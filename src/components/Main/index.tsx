@@ -5,9 +5,10 @@ import {
   Header,
   Link,
   HeaderButton,
+  HomeIcon,
   MessageIcon,
   GalleryIcon,
-  Button,
+  LoginButton,
   LogInIcon
 } from './styles'
 import RocketseatLogo from '../../assets/rocketseat.svg'
@@ -20,6 +21,10 @@ const Main: React.FC = () => {
 
         <Link>
           <HeaderButton>
+            <HomeIcon />
+            <span>Home</span>
+          </HeaderButton>
+          <HeaderButton>
             <GalleryIcon />
             <span>Galeria</span>
           </HeaderButton>
@@ -28,10 +33,10 @@ const Main: React.FC = () => {
             <span>Contato</span>
           </HeaderButton>
 
-          <Button>
+          <LoginButton>
             <span>Login</span>
             <LogInIcon />
-          </Button>
+          </LoginButton>
         </Link>
       </Header>
 

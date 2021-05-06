@@ -1,17 +1,18 @@
-import styled from 'styled-components'
-import { LogIn, MessageCircle, Image } from '../../styles/icons'
+import styled, { css } from 'styled-components'
+
+import { Home, MessageCircle, Image, LogIn } from '../../styles/icons'
+import Button from '../Button'
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: none;
 
-  /* Size Laptop of 1024px */
-  width: min(768px, 100%);
+  /* Header for Laptop */
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: column;
 
-  /* Size Tablet of 768px */
-  @media (min-width: 768px) {
-    border-left: 1px solid ${props => props.theme.colors.outline};
-    border-right: 1px solid ${props => props.theme.colors.outline};
+    /* Size to Laptop of 1024px */
+    width: min(768px, 100%);
   }
 `
 
@@ -27,76 +28,66 @@ export const Header = styled.div`
   text-align: left;
 
   padding: 8px 13px;
-  border-bottom: 1px solid ${props => props.theme.colors.outline};
 `
 
 export const Link = styled.div`
   display: flex;
   justify-items: left;
+  align-items: center;
 `
 
 export const HeaderButton = styled.button`
   display: flex;
 
+  background: transparent;
+
   :nth-child(n + 2) {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   span {
     display: inline;
-    margin-left: 10px;
+    margin-left: 3px;
     font-weight: bold;
     font-size: 18px;
 
     padding-bottom: 1px;
   }
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  :hover {
+    span,
+    svg {
+      color: ${props => props.theme.colors.primary_light_hover};
+      stroke: ${props => props.theme.colors.primary_light_hover};
+    }
+  }
+`
+
+const iconCSS = css`
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.5px;
+`
+
+export const HomeIcon = styled(Home)`
+  ${iconCSS}
 `
 
 export const MessageIcon = styled(MessageCircle)`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: inline;
-
-    width: 24px;
-    height: 24px;
-    stroke-width: 2px;
-
-    margin-left: 2px;
-  }
+  ${iconCSS}
 `
 
 export const GalleryIcon = styled(Image)`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: inline;
-
-    width: 24px;
-    height: 24px;
-    stroke-width: 2px;
-
-    margin-left: 2px;
-  }
+  ${iconCSS}
 `
 
-export const Button = styled.button`
-  display: flex;
-
+export const LoginButton = styled(Button)`
   margin-left: 20px;
-
-  span {
-    display: inline;
-    margin-right: 10px;
-    font-weight: bold;
-    font-size: 18px;
-
-    padding-bottom: 2px;
-  }
 `
 
 export const LogInIcon = styled(LogIn)`
-  width: 24px;
-  height: 24px;
-  stroke-width: 2px;
+  ${iconCSS}
 `

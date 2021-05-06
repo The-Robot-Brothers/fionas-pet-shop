@@ -1,1 +1,9 @@
-export { LogIn, LogOut, MessageCircle, Image } from '@styled-icons/feather'
+export {
+  LogIn,
+  LogOut,
+  MessageCircle,
+  Image,
+  Home
+} from '@styled-icons/feather'
+
+export { RocketseatIcon as Rocketseat } from '../components/RocketseatIcon'
