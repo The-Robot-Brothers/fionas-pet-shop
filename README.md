@@ -3,4 +3,7 @@
 ## Se debe bajar las siguientes extensiones en VSCODE
 ### EditorConfig for VSCode
 ### ESLint
-### Prettoer - Code formatter
+### Prettier - Code formatter
+
+## Deploy
+### https://fionas-pet-shop.vercel.app/
