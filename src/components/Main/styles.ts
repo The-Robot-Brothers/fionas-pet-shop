@@ -12,7 +12,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     /* Size to Laptop of 1024px */
-    width: min(768px, 100%);
+    width: min(900px, 100%);
   }
 `
 

@@ -5,7 +5,7 @@ export const Container = styled.div`
 `
 export const Wrapper = styled.div`
   height: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 
   display: flex;
