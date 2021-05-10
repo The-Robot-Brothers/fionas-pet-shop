@@ -9,10 +9,11 @@ import {
   HomeIcon,
   MessageIcon,
   GalleryIcon,
-  LoginButton,
   LogInIcon
 } from './styles'
 import RocketseatLogo from '../../assets/rocketseat.svg'
+
+import Button from '../Button'
 
 const Main: React.FC = () => {
   return (
@@ -34,10 +35,8 @@ const Main: React.FC = () => {
             <span>Contato</span>
           </HeaderButton>
 
-          <LoginButton>
-            <span>Login</span>
-            <LogInIcon />
-          </LoginButton>
+          <Button>
+          </Button>
         </Link>
       </Header>
 

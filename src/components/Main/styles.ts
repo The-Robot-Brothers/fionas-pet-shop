@@ -101,10 +101,6 @@ export const GalleryIcon = styled(Image)`
   ${iconCSS}
 `
 
-export const LoginButton = styled(Button)`
-  margin-left: 20px;
-`
-
 export const LogInIcon = styled(LogIn)`
   ${iconCSS}
 `
