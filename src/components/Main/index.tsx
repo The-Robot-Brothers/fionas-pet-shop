@@ -5,6 +5,7 @@ import {
   Header,
   Link,
   HeaderButton,
+  BottomMenu,
   HomeIcon,
   MessageIcon,
   GalleryIcon,
@@ -40,10 +41,12 @@ const Main: React.FC = () => {
         </Link>
       </Header>
 
-      {/* <BottomMenu>
+      <BottomMenu>
         <HomeIcon />
-        <EmailIcon />
-      </BottomMenu> */}
+        <GalleryIcon />
+        <MessageIcon />
+        <LogInIcon />
+      </BottomMenu>
     </Container>
   )
 }

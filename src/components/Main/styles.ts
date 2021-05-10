@@ -4,19 +4,17 @@ import { Home, MessageCircle, Image, LogIn } from '../../styles/icons'
 import Button from '../Button'
 
 export const Container = styled.div`
-  display: none;
+  display: flex;
+  flex-direction: column;
 
-  /* Header for Laptop */
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: column;
-
-    /* Size to Laptop of 1024px */
-    width: min(900px, 100%);
-  }
+  width: min(900px, 100%);
 `
 
 export const Header = styled.div`
+  @media (max-width: 769px) {
+    display: none;
+  }
+
   position: sticky;
   top: 0;
   background: ${props => props.theme.colors.background};
@@ -63,6 +61,25 @@ export const HeaderButton = styled.button`
       color: ${props => props.theme.colors.primary_light_hover};
       stroke: ${props => props.theme.colors.primary_light_hover};
     }
+  }
+`
+
+export const BottomMenu = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  background: ${props => props.theme.colors.background};
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 8px min(46px, max(10vw, 10px));
+
+  /* Size Mobile */
+  @media (min-width: 425px) {
+    display: none;
   }
 `
 

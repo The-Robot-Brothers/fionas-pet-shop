@@ -10,24 +10,28 @@ import {
 import Button from '../Button'
 
 export const Container = styled.div`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    padding: 8px 13px 20px;
-
-    max-height: 100vh;
-    height: 100vh;
-
-    /* overflow-y: auto; */
+  @media (max-width: 425px) {
+    display: none;
   }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 8px 13px 20px;
+
+  max-height: 100vh;
+  height: 100vh;
+
+  /* overflow-y: auto; */
 `
 
 export const TopSide = styled.div`
