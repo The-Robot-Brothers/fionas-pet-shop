@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 
 import { Home, MessageCircle, Image, LogIn } from '../../styles/icons'
-import Button from '../Button'
 
 export const Container = styled.div`
   display: flex;

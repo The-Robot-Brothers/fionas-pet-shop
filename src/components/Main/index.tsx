@@ -35,8 +35,8 @@ const Main: React.FC = () => {
             <span>Contato</span>
           </HeaderButton>
 
-          <Button>
-          </Button>
+          <Button />
+
         </Link>
       </Header>
 
