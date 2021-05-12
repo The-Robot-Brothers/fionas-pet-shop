@@ -14,6 +14,7 @@ import {
 import RocketseatLogo from '../../assets/rocketseat.svg'
 
 import Button from '../Button'
+import Toggle from '../Toggle'
 
 const Main: React.FC = () => {
   return (
@@ -22,21 +23,22 @@ const Main: React.FC = () => {
         <RocketseatLogo />
 
         <Link>
+          <Toggle />
+
           <HeaderButton>
             <HomeIcon />
-            <span>Home</span>
+            {/* <span>Home</span> */}
           </HeaderButton>
           <HeaderButton>
             <GalleryIcon />
-            <span>Galeria</span>
+            {/* <span>Galeria</span> */}
           </HeaderButton>
           <HeaderButton>
             <MessageIcon />
-            <span>Contato</span>
+            {/* <span>Contato</span> */}
           </HeaderButton>
 
           <Button />
-
         </Link>
       </Header>
 

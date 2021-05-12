@@ -3,8 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { Provider as NextAuthProvider } from 'next-auth/client'
 
 import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
-import { FolderPlusDimensions } from '@styled-icons/feather/FolderPlus'
+import theme from '../styles/themes/dark'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

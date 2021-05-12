@@ -1,7 +1,9 @@
-const theme = {
+export default {
+  title: 'light',
+
   colors: {
-    background: '#121214',
-    text: '#e1e1e6',
+    background: '#e1e1e6',
+    text: '#121214',
     primary: '#8257e6',
     primary_light_hover: '#9466ff',
     primary_dark_hover: '#011017',
@@ -11,5 +13,3 @@ const theme = {
     outline: '#7A7A7A'
   }
 }
-
-export default theme
