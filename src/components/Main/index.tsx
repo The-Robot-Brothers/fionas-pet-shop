@@ -27,15 +27,12 @@ const Main: React.FC = () => {
 
           <HeaderButton>
             <HomeIcon />
-            {/* <span>Home</span> */}
           </HeaderButton>
           <HeaderButton>
             <GalleryIcon />
-            {/* <span>Galeria</span> */}
           </HeaderButton>
           <HeaderButton>
             <MessageIcon />
-            {/* <span>Contato</span> */}
           </HeaderButton>
 
           <Button />

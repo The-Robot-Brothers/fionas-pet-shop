@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import {
   Container,
@@ -14,15 +14,22 @@ import {
   ExtraLarge
 } from './styles'
 
+import light from '../../styles/themes/light'
+import dark from '../../styles/themes/dark'
+
 const Toggle: React.FC = () => {
   const [toggled, setToggled] = useState(false)
+  const [theme, setTheme] = useState(light)
 
-  function handleClick() {
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light)
     setToggled(s => !s)
   }
 
+  console.log(theme)
+
   return (
-    <Container onClick={handleClick} className={`${toggled ? 'night' : ''}`}>
+    <Container onClick={toggleTheme} className={`${toggled ? 'night' : ''}`}>
       <Notch className={`${toggled ? 'night' : ''}`}>
         <CraterExtraSmall className={`${toggled ? 'night' : ''}`} />
         <CraterSmall className={`${toggled ? 'night' : ''}`} />
