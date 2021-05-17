@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import {
   Container,
@@ -14,17 +14,19 @@ import {
 import RocketseatLogo from '../../assets/rocketseat.svg'
 
 import Button from '../Button'
-import Toggle from '../Toggle'
+
 
 const Main: React.FC = () => {
+
+
   return (
+
     <Container>
+
       <Header>
         <RocketseatLogo />
 
         <Link>
-          <Toggle />
-
           <HeaderButton>
             <HomeIcon />
             {/* <span>Home</span> */}
@@ -39,6 +41,7 @@ const Main: React.FC = () => {
           </HeaderButton>
 
           <Button />
+
         </Link>
       </Header>
 
@@ -48,6 +51,7 @@ const Main: React.FC = () => {
         <MessageIcon />
         <LogInIcon />
       </BottomMenu>
+
     </Container>
   )
 }

@@ -1,5 +1,4 @@
-import React from 'react'
-
+import { ThemeProvider } from 'styled-components'
 import Main from '../Main'
 import MenuBar from '../MenuBar'
 import NavigatorBar from '../NavigatorBar'
@@ -7,14 +6,15 @@ import NavigatorBar from '../NavigatorBar'
 import { Container, Wrapper } from './styles'
 
 const Layout: React.FC = () => {
+
   return (
-    <Container>
-      <Wrapper>
-        <MenuBar />
-        <Main />
-        <NavigatorBar />
-      </Wrapper>
-    </Container>
+      <Container>
+        <Wrapper>
+          <MenuBar />
+          <Main />
+          <NavigatorBar />
+        </Wrapper>
+      </Container>
   )
 }
 

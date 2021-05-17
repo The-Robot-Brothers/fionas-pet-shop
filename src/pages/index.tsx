@@ -8,7 +8,6 @@ const Home: React.FC = () => {
       <Head>
         <title>Fiona's Pet Shop</title>
       </Head>
-
       <Layout />
     </div>
   )
